@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Research Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+header {
+    background: #4f46e5;
+    color: white;
+    padding: 35px 8%;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #4f46e5;
+    margin-bottom: 15px;
+}
+
+.number {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.section {
+    margin-top: 35px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #4f46e5;
+    color: white;
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.insight {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #4f46e5;
+    border-radius: 8px;
+}
+
+@media(max-width:700px) {
+    .cards,
+    .insights {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>User Research Portfolio</h1>
+    <p>Understanding users, their needs and their problems</p>
+</header>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Users Interviewed</h2>
+            <div class="number">25</div>
+            <p>Users participated in research</p>
+        </div>
+
+        <div class="card">
+            <h2>Research Methods</h2>
+            <div class="number">4</div>
+            <p>Interview, Survey, Observation and Testing</p>
+        </div>
+
+        <div class="card">
+            <h2>Key Insights</h2>
+            <div class="number">12</div>
+            <p>Important user insights discovered</p>
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Research Participants</h2>
+
+        <table>
+
+            <tr>
+                <th>User</th>
+                <th>Age</th>
+                <th>Occupation</th>
+                <th>Main Problem</th>
+            </tr>
+
+            <tr>
+                <td>User 01</td>
+                <td>21</td>
+                <td>Student</td>
+                <td>Difficult navigation</td>
+            </tr>
+
+            <tr>
+                <td>User 02</td>
+                <td>25</td>
+                <td>Designer</td>
+                <td>Complex interface</td>
+            </tr>
+
+            <tr>
+                <td>User 03</td>
+                <td>30</td>
+                <td>Developer</td>
+                <td>Slow process</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Key Research Insights</h2>
+
+        <div class="insights">
+
+            <div class="insight">
+                <h3>Easy Navigation</h3>
+                <p>Users prefer simple and clearly organized navigation.</p>
+            </div>
+
+            <div class="insight">
+                <h3>Simple Design</h3>
+                <p>Users find minimal interfaces easier to understand.</p>
+            </div>
+
+            <div class="insight">
+                <h3>Fast Actions</h3>
+                <p>Users want important actions to be completed quickly.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
