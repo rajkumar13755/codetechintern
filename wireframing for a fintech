@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fintech App Wireframe</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9edf3;
+}
+
+.title {
+    text-align: center;
+    padding: 30px;
+}
+
+.title h1 {
+    font-size: 32px;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.phone {
+    width: 300px;
+    height: 600px;
+    background: white;
+    border: 8px solid #222;
+    border-radius: 35px;
+    padding: 25px 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.phone h2 {
+    margin-bottom: 25px;
+}
+
+.balance {
+    background: #eeeeee;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.balance small {
+    color: #666;
+}
+
+.balance h1 {
+    margin-top: 10px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.menu button {
+    padding: 18px 5px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background: #ddd;
+}
+
+.transactions {
+    margin-top: 25px;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.send {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+
+<h1>Fintech App Wireframe</h1>
+
+<p>Mobile Banking Application UI Concept</p>
+
+</div>
+
+
+<div class="phone-container">
+
+<!-- LOGIN SCREEN -->
+
+<div class="phone">
+
+<h2>Welcome Back</h2>
+
+<p>Login to your account</p>
+
+<br>
+
+<input
+type="text"
+placeholder="Email"
+style="width:100%;padding:15px;margin-bottom:15px;"
+>
+
+<input
+type="password"
+placeholder="Password"
+style="width:100%;padding:15px;"
+>
+
+<button class="send">
+LOGIN
+</button>
+
+</div>
+
+
+<!-- DASHBOARD -->
+
+<div class="phone">
+
+<h2>My Account</h2>
+
+<div class="balance">
+
+<small>Total Balance</small>
+
+<h1>₹45,250</h1>
+
+</div>
+
+<div class="menu">
+
+<button onclick="alert('Send Money')">
+Send Money
+</button>
+
+<button onclick="alert('Add Money')">
+Add Money
+</button>
+
+<button onclick="alert('Pay Bills')">
+Pay Bills
+</button>
+
+<button onclick="alert('View Cards')">
+Cards
+</button>
+
+</div>
+
+<div class="transactions">
+
+<h3>Recent Transactions</h3>
+
+<div class="transaction">
+<span>Amazon</span>
+<span>-₹1,200</span>
+</div>
+
+<div class="transaction">
+<span>Salary</span>
+<span>+₹30,000</span>
+</div>
+
+<div class="transaction">
+<span>Electricity</span>
+<span>-₹850</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
