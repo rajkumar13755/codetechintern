@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Persona Development</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+}
+
+header {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+.container {
+    width: 85%;
+    margin: 35px auto;
+}
+
+.persona {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.profile h2 {
+    margin-top: 20px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.box {
+    background: #f8f8fb;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.box h3 {
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.goals {
+    margin-top: 25px;
+}
+
+.goal {
+    padding: 12px;
+    background: #f8f8fb;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.frustrations {
+    margin-top: 25px;
+}
+
+.frustration {
+    padding: 12px;
+    background: #fff1f2;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.quote {
+    margin-top: 25px;
+    padding: 20px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 12px;
+    font-style: italic;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:700px) {
+
+    .persona {
+        grid-template-columns: 1fr;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>User Persona Development</h1>
+
+<p>Understanding the target user</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="persona">
+
+
+<div class="profile">
+
+<div class="avatar">
+👨‍💻
+</div>
+
+<h2>Arun Kumar</h2>
+
+<p>College Student</p>
+
+<p>Age: 21</p>
+
+</div>
+
+
+<div>
+
+
+<div class="details">
+
+<div class="box">
+
+<h3>Occupation</h3>
+
+<p>Computer Science Student</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>Location</h3>
+
+<p>Chennai, India</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>Technology</h3>
+
+<p>Android Smartphone</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>Experience</h3>
+
+<p>Intermediate User</p>
+
+</div>
+
+</div>
+
+
+<div class="goals">
+
+<h2>Goals</h2>
+
+<div class="goal">
+✓ Manage money easily
+</div>
+
+<div class="goal">
+✓ Complete tasks quickly
+</div>
+
+<div class="goal">
+✓ Track expenses
+</div>
+
+</div>
+
+
+<div class="frustrations">
+
+<h2>Frustrations</h2>
+
+<div class="frustration">
+✗ Complicated navigation
+</div>
+
+<div class="frustration">
+✗ Too many steps
+</div>
+
+<div class="frustration">
+✗ Small text
+</div>
+
+</div>
+
+
+<div class="quote">
+
+" I want an app that is simple, fast and easy to understand. "
+
+</div>
+
+
+<button onclick="downloadPersona()">
+Save Persona
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+function downloadPersona() {
+
+alert(
+"User Persona Saved!\n\n" +
+"Name: Arun Kumar\n" +
+"Age: 21\n" +
+"Occupation: College Student"
+);
+
+}
+
+</script>
+
+</body>
+
+</html>
